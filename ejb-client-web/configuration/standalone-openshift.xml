@@ -462,7 +462,7 @@
                 <authentication-configuration name="ejb-auth-config" authentication-name="test">
                     <credential-reference clear-text="test@123"/>
                 </authentication-configuration>
-                <authentication-context name="ejb-auth-context">
+                <authentication-context name="default">
                     <match-rule authentication-configuration="ejb-auth-config"/>
                 </authentication-context>
             </authentication-client>
