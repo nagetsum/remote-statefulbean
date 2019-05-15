@@ -457,7 +457,7 @@
                 </maximum-set>
             </deployment-permissions>
         </subsystem>
-        <subsystem xmlns="urn:wildfly:elytron:1.2" final-providers="combined-providers" disallowed-providers="OracleUcrypto">
+        <subsystem xmlns="urn:wildfly:elytron:1.2" default-authentication-context="default" final-providers="combined-providers" disallowed-providers="OracleUcrypto">
             <authentication-client>
                 <authentication-configuration name="ejb-auth-config" authentication-name="test">
                     <credential-reference clear-text="test@123"/>
