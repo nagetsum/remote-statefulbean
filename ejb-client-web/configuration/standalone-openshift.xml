@@ -432,7 +432,7 @@
             <endpoint/>
             <http-connector name="http-remoting-connector" connector-ref="default" security-realm="ApplicationRealm"/>
             <outbound-connections>
-                <remote-outbound-connection name="remote-ejb-connection" outbound-socket-binding-ref="remote-ejb" authentication-context="ejb-auth-context">
+                <remote-outbound-connection name="remote-ejb-connection" outbound-socket-binding-ref="remote-ejb" security-realm="ejb-security-realm">
                     <properties>
                         <property name="SASL_POLICY_NOANONYMOUS" value="false"/>
                         <property name="SSL_ENABLED" value="false"/>
