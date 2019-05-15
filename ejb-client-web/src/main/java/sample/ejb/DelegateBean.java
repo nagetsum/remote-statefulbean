@@ -17,7 +17,7 @@ public class DelegateBean {
     @PostConstruct
     public void init() {
         Properties properties = new Properties();  
-        properties.put(Context.INITIAL_CONTEXT_FACTORY, "org.wildfly.naming.client.WildFlyInitialContextFactory"); 
+        properties.put(Context.URL_PKG_PREFIXES, "org.jboss.ejb.client.naming");
 
         try {
             Context context = new InitialContext(properties);
